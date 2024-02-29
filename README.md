@@ -45,3 +45,45 @@ def MH_Gamma(n, a, b):
             
     return vec
 ```
+### Visualization
+After performing the Metropolis-Hastings sampling, visualize the chain and the distribution of the sampled values.
+
+```python
+# Visulalization:
+    # set parameters
+nrep=55000
+burnin=5000
+shape=2.3
+rate=2.7
+vec=MH_Gamma(nrep, shape, rate)
+len(vec)
+
+#Modify the plots below so they apply only to the chain AFTER the burn-in period
+vec_burnin=vec[burnin:]
+len(vec_burnin)
+
+mean_vec=np.mean(vec_burnin)
+
+# create a subplot 2*1
+fig,(ax1,ax2)=plt.subplots(1,2,figsize=(16,6))
+
+# Plot 1: Time Series Plot
+ax1.plot(vec_burnin,label="Chain",color='blue')
+ax1.axhline(y=mean_vec,color="red",linewidth=2,label=f"Mean:{mean_vec:.2f}")
+ax1.set_xlabel("Chain")
+ax1.set_ylabel('Draws')
+ax1.set_title('Time Series of Draws')
+ax1.legend()
+
+
+# plot 2: Histogram
+ax2.hist(vec_burnin,bins=30,density=True,color='gray', alpha=0.7,label="Simulated Density") 
+ax2.axvline(x=mean_vec,color='red',linewidth=2,label=f'Mean:{mean_vec:.2f}')
+ax2.set_xlabel("value")
+ax2.set_ylabel('Density')
+ax2.set_title("Histogram of Draws")
+
+plt.tight_layout()
+plt.show()
+```
+![Posterior of Theta_1](path/to/your/theta1_plot.png)
