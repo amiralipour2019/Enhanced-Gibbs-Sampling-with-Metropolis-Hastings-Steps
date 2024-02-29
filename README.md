@@ -86,4 +86,4 @@ ax2.set_title("Histogram of Draws")
 plt.tight_layout()
 plt.show()
 ```
-![Posterior of Theta_1](path/to/your/theta1_plot.png)
+![Posterior of Theta_1](Time Series and Histogram of Draws.png)
