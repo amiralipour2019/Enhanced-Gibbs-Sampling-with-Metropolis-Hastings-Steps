@@ -87,6 +87,7 @@ plt.tight_layout()
 plt.show()
 ```
 ![Posterior of Theta_1](Time%20Series%20and%20Histogram%20of%20Draws.png)
+
 ** 2. Enhanced Gibbs Sampling with Metropolis-Hastings Steps for Hierarchical Models:**
 Building on the foundational knowledge of MCMC techniques, the project extends to a more complex application involving enhanced Gibbs sampling for a hierarchical model. This approach combines direct sampling methods (Gibbs sampling) with Metropolis-Hastings steps to efficiently sample from the joint posterior distribution of parameters and hyperparameters within the model. The hierarchical model chosen for this application involves parameters $\theta_j$ and hyperparameters $(\alpha, \beta)$ illustrating the process of Bayesian inference in models where direct sampling of all parameters is not feasible. This part of the project emphasizes the calculation of posterior probabilities, updates of hyperparameters using Metropolis-Hastings steps, and the analysis of the sampled distributions through visualization techniques.
 
