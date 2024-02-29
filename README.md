@@ -3,7 +3,8 @@ This project explores the application of Bayesian inference techniques through t
 
 The project is divided into two main parts:
 
-** 1. Sampling from a Gamma Distribution Using Metropolis-Hastings: **
+**1. Sampling from a Gamma Distribution Using Metropolis-Hastings:**
+
 The Metropolis-Hastings algorithm, a cornerstone of Markov Chain Monte Carlo (MCMC) methods, is employed to sample from a gamma distribution. This part of the project serves as an introductory
 example of using MCMC techniques to obtain random samples from a probability distribution for which direct sampling is not straightforward. The implementation is carried out in Python,
 showcasing how to propose new states, calculate acceptance probabilities, and decide whether to accept or reject proposed states based on these probabilities. The example culminates in visualizing the sampled values to assess the effectiveness of the sampling process.
