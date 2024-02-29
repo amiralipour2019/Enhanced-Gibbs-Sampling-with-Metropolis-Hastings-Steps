@@ -167,4 +167,5 @@ plt.tight_layout()
 plt.show()
 
 ```
+
 ![Posterior of Theta_1](Histographs%20of%20the%20draws%20of%20parameter%20and%20hyperparamters.png)
